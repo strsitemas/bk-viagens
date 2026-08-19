@@ -22,3 +22,5 @@ CONTEXTO*.md
 *_contexto.md
 
 generated/
+.vercel
+.env*

@@ -53,6 +53,7 @@ model Empresa {
   usuarios     UsuarioAdmin[]
   experiencias Experiencia[]
   leads        Lead[]
+  auditLogs    AuditLog[]
 
   @@index([ativo])
 }
@@ -68,7 +69,8 @@ model UsuarioAdmin {
   createdAt DateTime     @default(now())
   updatedAt DateTime     @updatedAt
 
-  empresa Empresa @relation(fields: [empresaId], references: [id], onDelete: Cascade)
+  empresa   Empresa    @relation(fields: [empresaId], references: [id], onDelete: Cascade)
+  auditLogs AuditLog[]
 
   @@index([empresaId])
   @@index([ativo])
@@ -309,4 +311,28 @@ model LeadPreferencia {
 
   @@id([leadId, tagId])
   @@index([tagId])
+}
+
+model AuditLog {
+  id          String   @id @default(uuid()) @db.Uuid
+  empresaId   String   @db.Uuid
+  usuarioId   String?  @db.Uuid
+  acao        String
+  entidade    String
+  entidadeId  String?
+  dadosAntes  Json?
+  dadosDepois Json?
+  metadata    Json?
+  requestId   String?
+  ip          String?
+  userAgent   String?
+  createdAt   DateTime @default(now())
+
+  empresa Empresa       @relation(fields: [empresaId], references: [id], onDelete: Restrict)
+  usuario UsuarioAdmin? @relation(fields: [usuarioId], references: [id], onDelete: SetNull)
+
+  @@index([empresaId, createdAt])
+  @@index([usuarioId, createdAt])
+  @@index([entidade, entidadeId])
+  @@index([acao])
 }

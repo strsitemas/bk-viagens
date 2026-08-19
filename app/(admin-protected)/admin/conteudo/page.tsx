@@ -201,9 +201,12 @@ export default async function AdminConteudoPage() {
           </div>
 
           <div className="mt-7">
-            <span className="inline-flex rounded-full bg-amber-100 px-5 py-3 text-sm font-semibold text-amber-800">
-              Tenant de Destino será revisado
-            </span>
+            <Link
+              href="/admin/conteudo/destinos"
+              className="inline-flex rounded-full bg-[#064f4e] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#043f3e]"
+            >
+              Gerenciar destinos
+            </Link>
           </div>
 
         </div>

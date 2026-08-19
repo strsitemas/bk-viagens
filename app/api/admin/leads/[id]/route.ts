@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 
 import { prisma } from "@/lib/prisma";
+import { registrarAuditoria } from "@/lib/audit";
 import { requireAdminApi } from "@/lib/admin-authorization";
 import {
   createRequestId,
@@ -186,6 +187,26 @@ export async function PATCH(
           updatedAt: true,
         },
       });
+
+    await registrarAuditoria({
+      empresaId: auth.admin.empresaId,
+      usuarioId: auth.admin.id,
+      acao: "UPDATE",
+      entidade: "Lead",
+      entidadeId: lead.id,
+      dadosAntes: {
+        status: statusAnterior,
+      },
+      dadosDepois: {
+        status: lead.status,
+      },
+      metadata: {
+        origem: "admin.lead.status",
+      },
+      requestId,
+      userAgent:
+        request.headers.get("user-agent"),
+    });
 
     logger.info(
       "admin.lead.status_changed",
