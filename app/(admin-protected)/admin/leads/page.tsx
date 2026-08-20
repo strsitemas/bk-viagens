@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { redirect } from "next/navigation";
 
 import { prisma } from "@/lib/prisma";
@@ -10,7 +10,7 @@ const statusLabels: Record<string, string> = {
   NOVO: "Novo",
   EM_CONTATO: "Em contato",
   PROPOSTA: "Proposta",
-  NEGOCIACAO: "Negociação",
+  NEGOCIACAO: "NegociaÃ§Ã£o",
   FECHADO: "Fechado",
   PERDIDO: "Perdido",
 };
@@ -75,7 +75,7 @@ export default async function AdminLeadsPage() {
           </h1>
 
           <p className="mt-3 text-base leading-7 text-[#60716f]">
-            Solicitações recebidas pelo site e
+            SolicitaÃ§Ãµes recebidas pelo site e
             andamento dos atendimentos.
           </p>
         </div>
@@ -100,7 +100,7 @@ export default async function AdminLeadsPage() {
             </p>
 
             <p className="mt-2 text-base text-[#71817f]">
-              Novas solicitações aparecerão
+              Novas solicitaÃ§Ãµes aparecerÃ£o
               automaticamente nesta tela.
             </p>
 

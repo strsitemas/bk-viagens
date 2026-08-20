@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { HeroSlideshow } from "@/components/home/hero-slideshow";
 
 const categories = [
@@ -59,7 +59,7 @@ export function Hero() {
         <div className="max-w-4xl text-white">
 
           <p className="mb-5 text-xs font-semibold uppercase tracking-[0.32em] !text-[#82f1eb]">
-            Descubra sua próxima história
+            Descubra sua próxima histÃ³ria
           </p>
 
           <h1 className="max-w-4xl text-5xl font-medium leading-[0.96] tracking-[-0.045em] !text-white sm:text-6xl lg:text-[5.5rem]">
@@ -116,7 +116,7 @@ export function Hero() {
             >
               Explorar
               <span className="ml-2" aria-hidden="true">
-                →
+                â†’
               </span>
             </button>
           </form>

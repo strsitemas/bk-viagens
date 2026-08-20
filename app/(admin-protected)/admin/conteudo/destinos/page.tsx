@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { redirect } from "next/navigation";
 
 import { prisma } from "@/lib/prisma";
@@ -115,11 +115,11 @@ export default async function AdminDestinosPage() {
                 <tr className="text-left text-sm font-semibold text-[#536967]">
                   <th className="px-7 py-5">Destino</th>
                   <th className="px-5 py-5">Tipo</th>
-                  <th className="px-5 py-5">Conteúdo</th>
-                  <th className="px-5 py-5">Publicação</th>
+                  <th className="px-5 py-5">ConteÃºdo</th>
+                  <th className="px-5 py-5">PublicaÃ§Ã£o</th>
                   <th className="px-5 py-5">Ordem</th>
                   <th className="px-7 py-5 text-right">
-                    Ação
+                    AÃ§Ã£o
                   </th>
                 </tr>
               </thead>

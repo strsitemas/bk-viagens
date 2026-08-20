@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { prisma } from "@/lib/prisma";
 
 export const dynamic = "force-dynamic";
@@ -7,7 +7,7 @@ const statusLabels: Record<string, string> = {
   NOVO: "Novo",
   EM_CONTATO: "Em contato",
   PROPOSTA: "Proposta",
-  NEGOCIACAO: "Negociação",
+  NEGOCIACAO: "NegociaÃ§Ã£o",
   FECHADO: "Fechado",
   PERDIDO: "Perdido",
 };
@@ -36,7 +36,7 @@ export default async function AdminDashboardPage() {
     return (
       <main className="mx-auto max-w-[1500px] px-6 py-12 lg:px-10">
         <div className="rounded-3xl border border-red-100 bg-red-50 p-8 text-red-700">
-          Empresa Buckart não encontrada.
+          Empresa Buckart nÃ£o encontrada.
         </div>
       </main>
     );
@@ -133,9 +133,9 @@ export default async function AdminDashboardPage() {
       detail: "Propostas enviadas",
     },
     {
-      label: "Negociação",
+      label: "NegociaÃ§Ã£o",
       value: negociacoes,
-      detail: "Em decisão",
+      detail: "Em decisÃ£o",
     },
     {
       label: "Fechados",
@@ -155,7 +155,7 @@ export default async function AdminDashboardPage() {
           </p>
 
           <h1 className="mt-3 text-4xl font-semibold tracking-[-0.04em] text-[#173f3e]">
-            Visão geral
+            VisÃ£o geral
           </h1>
 
           <p className="mt-3 text-base text-[#60716f]">
@@ -169,7 +169,7 @@ export default async function AdminDashboardPage() {
           className="inline-flex min-h-12 items-center justify-center rounded-full border border-[#b9d4d1] bg-white px-6 text-sm font-semibold text-[#315654] transition hover:border-[#078b87]"
         >
           Ver site
-          <span className="ml-2">↗</span>
+          <span className="ml-2">â†—</span>
         </Link>
 
       </div>
@@ -209,7 +209,7 @@ export default async function AdminDashboardPage() {
             </h2>
 
             <p className="mt-1 text-sm text-[#71817f]">
-              Últimas solicitações recebidas pelo site.
+              Ãšltimas solicitaÃ§Ãµes recebidas pelo site.
             </p>
           </div>
 
@@ -217,7 +217,7 @@ export default async function AdminDashboardPage() {
             href="/admin/leads"
             className="text-sm font-semibold text-[#078b87] hover:text-[#064f4e]"
           >
-            Ver todos →
+            Ver todos â†’
           </Link>
 
         </div>
@@ -230,7 +230,7 @@ export default async function AdminDashboardPage() {
             </p>
 
             <p className="mt-2 text-sm text-[#788784]">
-              As solicitações enviadas pelo site aparecerão aqui.
+              As solicitaÃ§Ãµes enviadas pelo site aparecerÃ£o aqui.
             </p>
           </div>
         ) : (

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import { FormEvent, useState } from "react";
@@ -59,7 +59,7 @@ export default function DestinoForm() {
       if (!response.ok || !data.success) {
         setErro(
           data.message ||
-            "Não foi possível cadastrar o destino."
+            "NÃ£o foi possÃ­vel cadastrar o destino."
         );
         return;
       }
@@ -68,7 +68,7 @@ export default function DestinoForm() {
       router.refresh();
     } catch {
       setErro(
-        "Falha de comunicação ao cadastrar o destino."
+        "Falha de comunicaÃ§Ã£o ao cadastrar o destino."
       );
     } finally {
       setSalvando(false);
@@ -87,8 +87,8 @@ export default function DestinoForm() {
         </h1>
 
         <p className="mt-4 max-w-2xl text-base leading-7 text-[#60716f]">
-          Cadastre um destino que poderá ser utilizado
-          nas experiências e páginas públicas da Buckart.
+          Cadastre um destino que poderÃ¡ ser utilizado
+          nas experiências e pÃ¡ginas pÃºblicas da Buckart.
         </p>
       </div>
 
@@ -104,7 +104,7 @@ export default function DestinoForm() {
 
         <section className="rounded-[2rem] border border-[#dce9e7] bg-white p-7 lg:p-8">
           <h2 className="text-xl font-semibold text-[#173f3e]">
-            Identificação
+            IdentificaÃ§Ã£o
           </h2>
 
           <div className="mt-6 grid gap-5 md:grid-cols-2">
@@ -118,20 +118,20 @@ export default function DestinoForm() {
             <Campo
               label="Slug"
               name="slug"
-              placeholder="Opcional — gerado pelo nome"
+              placeholder="Opcional â€” gerado pelo nome"
             />
 
             <Campo
-              label="País"
+              label="PaÃ­s"
               name="pais"
               required
-              placeholder="Ex.: França"
+              placeholder="Ex.: FranÃ§a"
             />
 
             <Campo
-              label="Estado / Região"
+              label="Estado / RegiÃ£o"
               name="estadoRegiao"
-              placeholder="Ex.: Île-de-France"
+              placeholder="Ex.: ÃŽle-de-France"
             />
 
             <Campo
@@ -165,7 +165,7 @@ export default function DestinoForm() {
 
         <section className="rounded-[2rem] border border-[#dce9e7] bg-white p-7 lg:p-8">
           <h2 className="text-xl font-semibold text-[#173f3e]">
-            Conteúdo
+            ConteÃºdo
           </h2>
 
           <div className="mt-6 space-y-5">
@@ -173,25 +173,25 @@ export default function DestinoForm() {
               label="Resumo"
               name="resumo"
               rows={3}
-              placeholder="Breve apresentação do destino"
+              placeholder="Breve apresentaÃ§Ã£o do destino"
             />
 
             <Area
-              label="Descrição"
+              label="DescriÃ§Ã£o"
               name="descricao"
               rows={7}
-              placeholder="Conteúdo completo do destino"
+              placeholder="ConteÃºdo completo do destino"
             />
 
             <div className="grid gap-5 md:grid-cols-2">
               <Campo
-                label="Melhor época"
+                label="Melhor Ã©poca"
                 name="melhorEpoca"
                 placeholder="Ex.: Abril a junho"
               />
 
               <Campo
-                label="Duração sugerida"
+                label="DuraÃ§Ã£o sugerida"
                 name="duracaoSugerida"
                 placeholder="Ex.: 5 a 7 dias"
               />
@@ -201,12 +201,12 @@ export default function DestinoForm() {
 
         <section className="rounded-[2rem] border border-[#dce9e7] bg-white p-7 lg:p-8">
           <h2 className="text-xl font-semibold text-[#173f3e]">
-            Publicação
+            PublicaÃ§Ã£o
           </h2>
 
           <div className="mt-6 grid gap-5 md:grid-cols-2">
             <Campo
-              label="Ordem de exibição"
+              label="Ordem de exibiÃ§Ã£o"
               name="ordem"
               type="number"
               defaultValue="0"
@@ -234,16 +234,16 @@ export default function DestinoForm() {
 
           <div className="mt-6 space-y-5">
             <Campo
-              label="Título SEO"
+              label="TÃ­tulo SEO"
               name="seoTitle"
-              placeholder="Título para mecanismos de busca"
+              placeholder="TÃ­tulo para mecanismos de busca"
             />
 
             <Area
-              label="Descrição SEO"
+              label="DescriÃ§Ã£o SEO"
               name="seoDescription"
               rows={3}
-              placeholder="Descrição para mecanismos de busca"
+              placeholder="DescriÃ§Ã£o para mecanismos de busca"
             />
           </div>
         </section>

@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+﻿import { NextResponse } from "next/server";
 
 import { prisma } from "@/lib/prisma";
 import { registrarAuditoria } from "@/lib/audit";
@@ -71,7 +71,7 @@ export async function PATCH(
       return NextResponse.json(
         {
           success: false,
-          message: "Lead inválido.",
+          message: "Lead invÃ¡lido.",
           requestId,
         },
         { status: 400 }
@@ -97,7 +97,7 @@ export async function PATCH(
       return NextResponse.json(
         {
           success: false,
-          message: "JSON inválido.",
+          message: "JSON invÃ¡lido.",
           requestId,
         },
         { status: 400 }
@@ -124,7 +124,7 @@ export async function PATCH(
       return NextResponse.json(
         {
           success: false,
-          message: "Status inválido.",
+          message: "Status invÃ¡lido.",
           requestId,
         },
         { status: 400 }
@@ -161,7 +161,7 @@ export async function PATCH(
         {
           success: false,
           message:
-            "Lead não encontrado.",
+            "Lead nÃ£o encontrado.",
           requestId,
         },
         { status: 404 }
@@ -248,7 +248,7 @@ export async function PATCH(
       {
         success: false,
         message:
-          "Não foi possível atualizar o lead.",
+          "NÃ£o foi possÃ­vel atualizar o lead.",
         requestId,
       },
       {

@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import Link from "next/link";
 
 const navigation = [
@@ -45,7 +45,7 @@ export function Header({ variant = "overlay" }: HeaderProps) {
           <span className="hidden sm:block">
             <span
               className={`block text-lg font-semibold tracking-[0.22em] ${
-                light ? "text-[#063f3f]" : "text-white"
+                light ? "text-[#063f3f]" : "!text-white"
               }`}
             >
               BUCKART
@@ -68,7 +68,7 @@ export function Header({ variant = "overlay" }: HeaderProps) {
               className={`text-base font-semibold transition-colors ${
                 light
                   ? "text-[#173f3e] hover:text-[#078b87]"
-                  : "text-white [text-shadow:0_1px_8px_rgba(0,0,0,0.55)] hover:text-[#82f1eb]"
+                  : "!text-white [text-shadow:0_1px_8px_rgba(0,0,0,0.75)] hover:!text-[#82f1eb]"
               }`}
             >
               {item.label}
@@ -81,13 +81,13 @@ export function Header({ variant = "overlay" }: HeaderProps) {
           className={`hidden items-center rounded-full px-6 py-3.5 text-base font-semibold shadow-lg transition sm:inline-flex ${
             light
               ? "bg-[#064f4e] text-white hover:bg-[#08706d]"
-              : "bg-white text-[#064f4e] hover:bg-[#dffaf7]"
+              : "!bg-white !text-[#064f4e] hover:!bg-[#dffaf7]"
           }`}
         >
           Planeje sua viagem
 
           <span className={`ml-2 ${light ? "text-[#8de7e1]" : "text-[#0b8f8b]"}`}>
-            →
+            â†’
           </span>
         </Link>
 
@@ -111,3 +111,4 @@ export function Header({ variant = "overlay" }: HeaderProps) {
     </header>
   );
 }
+

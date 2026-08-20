@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
@@ -18,7 +18,7 @@ const statuses = [
   },
   {
     value: "NEGOCIACAO",
-    label: "Negociação",
+    label: "NegociaÃ§Ã£o",
   },
   {
     value: "FECHADO",
@@ -82,7 +82,7 @@ export function LeadStatusControl({
 
         setMessage(
           result.message ||
-            "Não foi possível atualizar."
+            "NÃ£o foi possÃ­vel atualizar."
         );
 
         return;
@@ -96,7 +96,7 @@ export function LeadStatusControl({
       setStatus(previousStatus);
 
       setMessage(
-        "Erro de comunicação com o servidor."
+        "Erro de comunicaÃ§Ã£o com o servidor."
       );
     }
     finally {

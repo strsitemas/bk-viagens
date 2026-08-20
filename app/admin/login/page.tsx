@@ -1,4 +1,4 @@
-import { redirect } from "next/navigation";
+﻿import { redirect } from "next/navigation";
 
 import { AdminLoginForm } from "@/components/admin/login-form";
 import { obterSessao } from "@/lib/auth-admin";
@@ -25,7 +25,7 @@ export default async function AdminLoginPage() {
           </p>
 
           <h1 className="mt-3 text-4xl font-semibold tracking-[-0.04em] text-[#173f3e]">
-            Área administrativa
+            Ãrea administrativa
           </h1>
 
           <p className="mt-3 text-base leading-7 text-[#60716f]">

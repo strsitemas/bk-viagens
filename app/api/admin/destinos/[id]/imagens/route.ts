@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+﻿import { NextResponse } from "next/server";
 
 import { prisma } from "@/lib/prisma";
 import { registrarAuditoria } from "@/lib/audit";
@@ -61,7 +61,7 @@ export async function POST(
       return NextResponse.json(
         {
           success: false,
-          message: "Destino não encontrado.",
+          message: "Destino nÃ£o encontrado.",
           requestId,
         },
         { status: 404 }
@@ -78,7 +78,7 @@ export async function POST(
         parsed === null ||
         Array.isArray(parsed)
       ) {
-        throw new Error("Body inválido");
+        throw new Error("Body invÃ¡lido");
       }
 
       body = parsed as Record<string, unknown>;
@@ -86,7 +86,7 @@ export async function POST(
       return NextResponse.json(
         {
           success: false,
-          message: "JSON inválido.",
+          message: "JSON invÃ¡lido.",
           requestId,
         },
         { status: 400 }
@@ -108,7 +108,7 @@ export async function POST(
         {
           success: false,
           message:
-            "URL e texto alternativo são obrigatórios.",
+            "URL e texto alternativo sÃ£o obrigatÃ³rios.",
           requestId,
         },
         { status: 400 }
@@ -123,7 +123,7 @@ export async function POST(
       return NextResponse.json(
         {
           success: false,
-          message: "URL da imagem inválida.",
+          message: "URL da imagem invÃ¡lida.",
           requestId,
         },
         { status: 400 }
@@ -152,7 +152,7 @@ export async function POST(
       await prisma.$transaction(
         async (tx) => {
           /*
-           * Um destino deve possuir no máximo
+           * Um destino deve possuir no mÃ¡ximo
            * uma imagem marcada como CAPA.
            */
           if (tipo === "CAPA") {
@@ -241,7 +241,7 @@ export async function POST(
       {
         success: false,
         message:
-          "Não foi possível cadastrar a imagem.",
+          "NÃ£o foi possÃ­vel cadastrar a imagem.",
         requestId,
       },
       {

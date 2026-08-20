@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+﻿import { NextResponse } from "next/server";
 
 import { prisma } from "@/lib/prisma";
 import { registrarAuditoria } from "@/lib/audit";
@@ -69,7 +69,7 @@ export async function PATCH(
       return NextResponse.json(
         {
           success: false,
-          message: "Destino inválido.",
+          message: "Destino invÃ¡lido.",
           requestId,
         },
         { status: 400 }
@@ -97,7 +97,7 @@ export async function PATCH(
       return NextResponse.json(
         {
           success: false,
-          message: "Destino não encontrado.",
+          message: "Destino nÃ£o encontrado.",
           requestId,
         },
         { status: 404 }
@@ -114,7 +114,7 @@ export async function PATCH(
         parsed === null ||
         Array.isArray(parsed)
       ) {
-        throw new Error("Body inválido");
+        throw new Error("Body invÃ¡lido");
       }
 
       body = parsed as Record<string, unknown>;
@@ -132,7 +132,7 @@ export async function PATCH(
       return NextResponse.json(
         {
           success: false,
-          message: "JSON inválido.",
+          message: "JSON invÃ¡lido.",
           requestId,
         },
         { status: 400 }
@@ -161,7 +161,7 @@ export async function PATCH(
         {
           success: false,
           message:
-            "Nome, país e tipo do destino são obrigatórios.",
+            "Nome, paÃ­s e tipo do destino sÃ£o obrigatÃ³rios.",
           requestId,
         },
         { status: 400 }
@@ -177,7 +177,7 @@ export async function PATCH(
         {
           success: false,
           message:
-            "Não foi possível gerar o slug.",
+            "NÃ£o foi possÃ­vel gerar o slug.",
           requestId,
         },
         { status: 400 }
@@ -202,7 +202,7 @@ export async function PATCH(
         {
           success: false,
           message:
-            "Já existe outro destino utilizando este slug.",
+            "JÃ¡ existe outro destino utilizando este slug.",
           requestId,
         },
         { status: 409 }
@@ -347,7 +347,7 @@ export async function PATCH(
       {
         success: false,
         message:
-          "Não foi possível atualizar o destino.",
+          "NÃ£o foi possÃ­vel atualizar o destino.",
         requestId,
       },
       {

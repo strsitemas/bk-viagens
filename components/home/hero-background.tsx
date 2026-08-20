@@ -1,9 +1,9 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 
 const slides = [
   {
     src: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=2200&q=82",
-    alt: "Viagem em família",
+    alt: "Viagem em famÃ­lia",
   },
   {
     src: "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=2200&q=82",

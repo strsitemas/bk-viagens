@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+﻿import { NextResponse } from "next/server";
 import { put } from "@vercel/blob";
 
 import { requireAdminRole } from "@/lib/admin-authorization";
@@ -80,7 +80,7 @@ export async function POST(request: Request) {
         {
           success: false,
           message:
-            "Formato não permitido. Use JPG, PNG, WebP ou AVIF.",
+            "Formato nÃ£o permitido. Use JPG, PNG, WebP ou AVIF.",
           requestId,
         },
         { status: 415 }
@@ -91,7 +91,7 @@ export async function POST(request: Request) {
       return NextResponse.json(
         {
           success: false,
-          message: "O arquivo está vazio.",
+          message: "O arquivo estÃ¡ vazio.",
           requestId,
         },
         { status: 400 }
@@ -127,7 +127,7 @@ export async function POST(request: Request) {
     if (!blobToken) {
       logger.error(
         "admin.upload.missing_blob_token",
-        new Error("BLOB_READ_WRITE_TOKEN não configurado."),
+        new Error("BLOB_READ_WRITE_TOKEN nÃ£o configurado."),
         {
           requestId,
           userId: auth.admin.id,
@@ -139,7 +139,7 @@ export async function POST(request: Request) {
         {
           success: false,
           message:
-            "Serviço de armazenamento não configurado.",
+            "ServiÃ§o de armazenamento nÃ£o configurado.",
           requestId,
         },
         { status: 500 }
@@ -193,7 +193,7 @@ export async function POST(request: Request) {
       {
         success: false,
         message:
-          "Não foi possível enviar a imagem.",
+          "NÃ£o foi possÃ­vel enviar a imagem.",
         requestId,
       },
       {

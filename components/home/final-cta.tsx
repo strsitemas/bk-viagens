@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 export function FinalCta() {
   return (
@@ -30,8 +30,8 @@ export function FinalCta() {
             </h2>
 
             <p className="mt-7 max-w-2xl text-base leading-7 text-white/75">
-              Pode ser um destino específico, uma data especial ou simplesmente
-              aquela vontade de sair por alguns dias. A partir daí, a Buckart
+              Pode ser um destino especÃ­fico, uma data especial ou simplesmente
+              aquela vontade de sair por alguns dias. A partir daÃ­, a Buckart
               ajuda a transformar a ideia em viagem.
             </p>
           </div>
@@ -42,7 +42,7 @@ export function FinalCta() {
           >
             Planejar minha viagem
             <span className="ml-3 text-[#0b8f8b]" aria-hidden="true">
-              →
+              â†’
             </span>
           </Link>
 

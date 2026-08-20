@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 
 import { prisma } from "@/lib/prisma";
@@ -78,7 +78,7 @@ export default async function LeadDetailPage({
 
   const whatsappHref = whatsapp
     ? `https://wa.me/${whatsapp}?text=${encodeURIComponent(
-        `Olá ${lead.nome}, tudo bem? Aqui é da Buckart Viagens. Recebemos sua solicitação e vamos conversar sobre sua viagem.`
+        `OlÃ¡ ${lead.nome}, tudo bem? Aqui Ã© da Buckart Viagens. Recebemos sua solicitaÃ§Ã£o e vamos conversar sobre sua viagem.`
       )}`
     : null;
 
@@ -93,7 +93,7 @@ export default async function LeadDetailPage({
         href="/admin/leads"
         className="text-sm font-semibold text-[#087b77] hover:text-[#064f4e]"
       >
-        ← Voltar para viajantes
+        â† Voltar para viajantes
       </Link>
 
 
@@ -110,7 +110,7 @@ export default async function LeadDetailPage({
           </h1>
 
           <p className="mt-3 text-base text-[#60716f]">
-            Solicitação recebida em{" "}
+            SolicitaÃ§Ã£o recebida em{" "}
             {new Intl.DateTimeFormat(
               "pt-BR",
               {
@@ -159,18 +159,18 @@ export default async function LeadDetailPage({
               />
 
               <Info
-                label="Período"
+                label="PerÃ­odo"
                 value={
                   lead.periodoDesejado ||
-                  "Não informado"
+                  "NÃ£o informado"
                 }
               />
 
               <Info
-                label="Duração"
+                label="DuraÃ§Ã£o"
                 value={
                   lead.duracaoDesejada ||
-                  "Não informada"
+                  "NÃ£o informada"
                 }
               />
 
@@ -191,17 +191,17 @@ export default async function LeadDetailPage({
               />
 
               <Info
-                label="Crianças"
+                label="CrianÃ§as"
                 value={String(
                   lead.quantidadeCriancas
                 )}
               />
 
               <Info
-                label="Nível de conforto"
+                label="NÃ­vel de conforto"
                 value={
                   lead.nivelConforto ||
-                  "Não informado"
+                  "NÃ£o informado"
                 }
               />
 
@@ -214,7 +214,7 @@ export default async function LeadDetailPage({
                   ]
                     .filter(Boolean)
                     .join(" - ") ||
-                  "Não informada"
+                  "NÃ£o informada"
                 }
               />
 
@@ -226,12 +226,12 @@ export default async function LeadDetailPage({
           <div className="rounded-3xl border border-[#deebe9] bg-white p-7 lg:p-8">
 
             <h2 className="text-2xl font-semibold tracking-[-0.025em] text-[#173f3e]">
-              Observações do viajante
+              ObservaÃ§Ãµes do viajante
             </h2>
 
             <p className="mt-5 whitespace-pre-wrap text-base leading-8 text-[#435957]">
               {lead.observacoes ||
-                "Nenhuma observação informada."}
+                "Nenhuma observaÃ§Ã£o informada."}
             </p>
 
           </div>
@@ -253,7 +253,7 @@ export default async function LeadDetailPage({
                 label="WhatsApp"
                 value={
                   lead.whatsapp ||
-                  "Não informado"
+                  "NÃ£o informado"
                 }
               />
 
@@ -261,7 +261,7 @@ export default async function LeadDetailPage({
                 label="Telefone"
                 value={
                   lead.telefone ||
-                  "Não informado"
+                  "NÃ£o informado"
                 }
               />
 
@@ -269,7 +269,7 @@ export default async function LeadDetailPage({
                 label="E-mail"
                 value={
                   lead.email ||
-                  "Não informado"
+                  "NÃ£o informado"
                 }
               />
 
@@ -304,7 +304,7 @@ export default async function LeadDetailPage({
                 label="Origem do lead"
                 value={
                   lead.origemLead ||
-                  "Não informada"
+                  "NÃ£o informada"
                 }
               />
 
@@ -313,12 +313,12 @@ export default async function LeadDetailPage({
                 value={
                   lead.consentimentoLgpd
                     ? "Consentimento registrado"
-                    : "Não registrado"
+                    : "NÃ£o registrado"
                 }
               />
 
               <Info
-                label="Última atualização"
+                label="Ãšltima atualizaÃ§Ã£o"
                 value={new Intl.DateTimeFormat(
                   "pt-BR",
                   {
