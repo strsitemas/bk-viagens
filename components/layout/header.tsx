@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 
 const navigation = [
@@ -87,7 +87,7 @@ export function Header({ variant = "overlay" }: HeaderProps) {
           Planeje sua viagem
 
           <span className={`ml-2 ${light ? "text-[#8de7e1]" : "text-[#0b8f8b]"}`}>
-            â†’
+            →
           </span>
         </Link>
 

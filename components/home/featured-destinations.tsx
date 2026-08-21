@@ -1,23 +1,23 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 
 const destinations = [
   {
     name: "Itália",
-    description: "HistÃ³ria, gastronomia e paisagens inesquecÃ­veis.",
+    description: "História, gastronomia e paisagens inesquecíveis.",
     href: "/destinos/italia",
     image:
       "https://images.unsplash.com/photo-1529260830199-42c24126f198?auto=format&fit=crop&w=1200&q=82",
   },
   {
     name: "Maldivas",
-    description: "Dias desacelerados em algumas das Ã¡guas mais bonitas do mundo.",
+    description: "Dias desacelerados em algumas das águas mais bonitas do mundo.",
     href: "/destinos/maldivas",
     image:
       "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1200&q=82",
   },
   {
-    name: "PatagÃ´nia",
+    name: "Patagônia",
     description: "Natureza monumental para quem quer sentir o mundo de perto.",
     href: "/destinos/patagonia",
     image:
@@ -81,7 +81,7 @@ export function FeaturedDestinations() {
                       className="transition-transform group-hover:translate-x-1"
                       aria-hidden="true"
                     >
-                      â†’
+                      →
                     </span>
                   </span>
                 </div>

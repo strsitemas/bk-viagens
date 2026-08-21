@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 
 export function SurpriseMe() {
   return (
@@ -16,15 +16,15 @@ export function SurpriseMe() {
             </p>
 
             <h2 className="mt-4 text-4xl font-medium leading-tight tracking-[-0.04em] sm:text-5xl">
-              Ainda nÃ£o decidiu?
+              Ainda não decidiu?
               <span className="block text-[#8cece6]">
                 Deixa com a Buckart.
               </span>
             </h2>
 
             <p className="mt-6 max-w-xl leading-7 text-white/70">
-              Conte como você gosta de viajar. NÃ³s mostramos experiências que
-              combinam com seu momento â€” sem você precisar pesquisar por horas.
+              Conte como você gosta de viajar. Nós mostramos experiências que
+              combinam com seu momento — sem você precisar pesquisar por horas.
             </p>
           </div>
 
@@ -33,7 +33,7 @@ export function SurpriseMe() {
             className="inline-flex min-h-14 items-center justify-center rounded-full bg-white px-7 text-sm font-semibold text-[#064b4b] transition hover:bg-[#c8f6f2]"
           >
             Me surpreenda
-            <span className="ml-3" aria-hidden="true">â†’</span>
+            <span className="ml-3" aria-hidden="true">→</span>
           </Link>
         </div>
       </div>

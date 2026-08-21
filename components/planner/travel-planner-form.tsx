@@ -1,10 +1,10 @@
-﻿"use client";
+"use client";
 
 import { FormEvent, useState } from "react";
 
 const experiencias = [
   "Praia",
-  "FamÃ­lia",
+  "Família",
   "Romance",
   "Neve",
   "Europa",
@@ -82,7 +82,7 @@ export function TravelPlannerForm() {
       if (!response.ok) {
         setError(
           result.message ||
-            "NÃ£o foi possÃ­vel enviar sua solicitaÃ§Ã£o."
+            "Não foi possível enviar sua solicitação."
         );
         return;
       }
@@ -91,7 +91,7 @@ export function TravelPlannerForm() {
       setForm(initialState);
     } catch {
       setError(
-        "NÃ£o foi possÃ­vel conectar com a Buckart agora. Tente novamente."
+        "Não foi possível conectar com a Buckart agora. Tente novamente."
       );
     } finally {
       setSending(false);
@@ -102,19 +102,19 @@ export function TravelPlannerForm() {
     return (
       <div className="rounded-[2rem] bg-white p-8 shadow-xl sm:p-12">
         <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#dff8f5] text-2xl text-[#06716e]">
-          âœ“
+          ✓
         </div>
 
         <p className="mt-8 text-xs font-semibold uppercase tracking-[0.28em] text-[#087d7a]">
-          SolicitaÃ§Ã£o recebida
+          Solicitação recebida
         </p>
 
         <h2 className="mt-4 text-4xl font-medium leading-tight tracking-[-0.04em] text-[#073f3f]">
-          Sua viagem jÃ¡ comeÃ§ou por aqui.
+          Sua viagem já começou por aqui.
         </h2>
 
         <p className="mt-6 max-w-xl leading-7 text-stone-600">
-          Recebemos suas informaÃ§Ãµes. A Buckart poderÃ¡ entrar em
+          Recebemos suas informações. A Buckart poderá entrar em
           contato para entender os detalhes e ajudar a transformar
           sua ideia em uma viagem bem planejada.
         </p>
@@ -170,7 +170,7 @@ export function TravelPlannerForm() {
           />
 
           <span>
-            Ainda nÃ£o decidi. Quero que a Buckart me sugira destinos.
+            Ainda não decidi. Quero que a Buckart me sugira destinos.
           </span>
         </label>
       </div>
@@ -272,7 +272,7 @@ export function TravelPlannerForm() {
 
           <label className="rounded-2xl border border-stone-200 p-5">
             <span className="block text-base font-semibold text-[#293b39]">
-              CrianÃ§as
+              Crianças
             </span>
 
             <input
@@ -305,7 +305,7 @@ export function TravelPlannerForm() {
             }
             maxLength={1500}
             rows={5}
-            placeholder="Conte preferÃªncias, comemoraÃ§Ãµes, necessidades ou experiências que gostaria de viver..."
+            placeholder="Conte preferências, comemorações, necessidades ou experiências que gostaria de viver..."
             className="mt-2 w-full resize-none rounded-2xl border border-stone-200 bg-stone-50 p-5 text-base font-normal leading-7 text-[#202d2c] outline-none placeholder:text-[#6c7775] focus:border-[#0a8b87]"
           />
         </label>
@@ -371,7 +371,7 @@ export function TravelPlannerForm() {
 
         <span>
           Autorizo a Buckart Viagens a utilizar os dados informados
-          para entrar em contato comigo sobre esta solicitaÃ§Ã£o de
+          para entrar em contato comigo sobre esta solicitação de
           viagem.
         </span>
       </label>
@@ -392,7 +392,7 @@ export function TravelPlannerForm() {
       >
         {sending
           ? "Enviando..."
-          : "Quero planejar minha viagem â†’"}
+          : "Quero planejar minha viagem →"}
       </button>
 
       <p className="mt-4 text-center text-sm leading-6 text-[#667573]">

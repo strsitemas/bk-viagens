@@ -25,7 +25,7 @@ export default async function AdminLoginPage() {
           </p>
 
           <h1 className="mt-3 text-4xl font-semibold tracking-[-0.04em] text-[#173f3e]">
-            Ãrea administrativa
+            Área administrativa
           </h1>
 
           <p className="mt-3 text-base leading-7 text-[#60716f]">
@@ -43,3 +43,4 @@ export default async function AdminLoginPage() {
     </main>
   );
 }
+

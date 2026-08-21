@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Link from "next/link";
 import { FormEvent, useState } from "react";
@@ -84,7 +84,7 @@ export default function DestinoEditForm({
       if (!response.ok || !data.success) {
         setErro(
           data.message ||
-            "NÃ£o foi possÃ­vel atualizar o destino."
+            "Não foi possível atualizar o destino."
         );
         return;
       }
@@ -94,7 +94,7 @@ export default function DestinoEditForm({
       router.refresh();
     } catch {
       setErro(
-        "Falha de comunicaÃ§Ã£o ao atualizar o destino."
+        "Falha de comunicação ao atualizar o destino."
       );
     } finally {
       setSalvando(false);
@@ -113,7 +113,7 @@ export default function DestinoEditForm({
         </h1>
 
         <p className="mt-4 max-w-2xl text-base leading-7 text-[#60716f]">
-          Atualize conteúdo, publicaÃ§Ã£o e informaÃ§Ãµes
+          Atualize conteúdo, publicação e informações
           de SEO do destino.
         </p>
       </div>
@@ -136,7 +136,7 @@ export default function DestinoEditForm({
 
         <section className="rounded-[2rem] border border-[#dce9e7] bg-white p-7 lg:p-8">
           <h2 className="text-xl font-semibold text-[#173f3e]">
-            IdentificaÃ§Ã£o
+            Identificação
           </h2>
 
           <div className="mt-6 grid gap-5 md:grid-cols-2">
@@ -155,14 +155,14 @@ export default function DestinoEditForm({
             />
 
             <Campo
-              label="PaÃ­s"
+              label="País"
               name="pais"
               required
               defaultValue={destino.pais}
             />
 
             <Campo
-              label="Estado / RegiÃ£o"
+              label="Estado / Região"
               name="estadoRegiao"
               defaultValue={destino.estadoRegiao ?? ""}
             />
@@ -198,7 +198,7 @@ export default function DestinoEditForm({
 
         <section className="rounded-[2rem] border border-[#dce9e7] bg-white p-7 lg:p-8">
           <h2 className="text-xl font-semibold text-[#173f3e]">
-            ConteÃºdo
+            Conteúdo
           </h2>
 
           <div className="mt-6 space-y-5">
@@ -210,7 +210,7 @@ export default function DestinoEditForm({
             />
 
             <Area
-              label="DescriÃ§Ã£o"
+              label="Descrição"
               name="descricao"
               rows={7}
               defaultValue={destino.descricao ?? ""}
@@ -218,13 +218,13 @@ export default function DestinoEditForm({
 
             <div className="grid gap-5 md:grid-cols-2">
               <Campo
-                label="Melhor Ã©poca"
+                label="Melhor época"
                 name="melhorEpoca"
                 defaultValue={destino.melhorEpoca ?? ""}
               />
 
               <Campo
-                label="DuraÃ§Ã£o sugerida"
+                label="Duração sugerida"
                 name="duracaoSugerida"
                 defaultValue={
                   destino.duracaoSugerida ?? ""
@@ -236,12 +236,12 @@ export default function DestinoEditForm({
 
         <section className="rounded-[2rem] border border-[#dce9e7] bg-white p-7 lg:p-8">
           <h2 className="text-xl font-semibold text-[#173f3e]">
-            PublicaÃ§Ã£o
+            Publicação
           </h2>
 
           <div className="mt-6 grid gap-5 md:grid-cols-2">
             <Campo
-              label="Ordem de exibiÃ§Ã£o"
+              label="Ordem de exibição"
               name="ordem"
               type="number"
               min="0"
@@ -271,13 +271,13 @@ export default function DestinoEditForm({
 
           <div className="mt-6 space-y-5">
             <Campo
-              label="TÃ­tulo SEO"
+              label="Título SEO"
               name="seoTitle"
               defaultValue={destino.seoTitle ?? ""}
             />
 
             <Area
-              label="DescriÃ§Ã£o SEO"
+              label="Descrição SEO"
               name="seoDescription"
               rows={3}
               defaultValue={
@@ -302,7 +302,7 @@ export default function DestinoEditForm({
           >
             {salvando
               ? "Salvando..."
-              : "Salvar alteraÃ§Ãµes"}
+              : "Salvar alterações"}
           </button>
         </div>
       </form>

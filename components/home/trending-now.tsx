@@ -1,22 +1,22 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 
 const trends = [
   {
-    eyebrow: "FamÃ­lia",
+    eyebrow: "Família",
     title: "Disney",
     text: "Magia para todas as idades, com planejamento para aproveitar cada dia.",
     href: "/experiencias",
   },
   {
     eyebrow: "Europa",
-    title: "VerÃ£o europeu",
+    title: "Verão europeu",
     text: "Cidades, gastronomia e dias longos para explorar com calma.",
     href: "/destinos",
   },
   {
     eyebrow: "Mar",
     title: "Cruzeiros",
-    text: "VÃ¡rios destinos em uma Ãºnica viagem, com conforto entre cada parada.",
+    text: "Vários destinos em uma única viagem, com conforto entre cada parada.",
     href: "/cruzeiros",
   },
 ];
@@ -67,7 +67,7 @@ export function TrendingNow() {
                 </div>
 
                 <span className="text-2xl text-[#087d7a] transition-transform group-hover:translate-x-1">
-                  â†’
+                  →
                 </span>
               </Link>
             ))}

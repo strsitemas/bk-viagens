@@ -1,4 +1,4 @@
-﻿import { NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import bcrypt from "bcryptjs";
 
 import { prisma } from "@/lib/prisma";
@@ -17,7 +17,7 @@ export async function POST(request: Request) {
       return NextResponse.json(
         {
           success: false,
-          message: "Credenciais invÃ¡lidas.",
+          message: "Credenciais inválidas.",
         },
         { status: 400 }
       );
@@ -79,7 +79,7 @@ export async function POST(request: Request) {
       return NextResponse.json(
         {
           success: false,
-          message: "E-mail ou senha invÃ¡lidos.",
+          message: "E-mail ou senha inválidos.",
         },
         { status: 401 }
       );
@@ -107,7 +107,7 @@ export async function POST(request: Request) {
       {
         success: false,
         message:
-          "NÃ£o foi possÃ­vel realizar o login.",
+          "Não foi possível realizar o login.",
       },
       { status: 500 }
     );

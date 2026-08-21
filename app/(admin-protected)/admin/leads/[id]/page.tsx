@@ -93,7 +93,7 @@ export default async function LeadDetailPage({
         href="/admin/leads"
         className="text-sm font-semibold text-[#087b77] hover:text-[#064f4e]"
       >
-        â† Voltar para viajantes
+        Ã¢â€ Â Voltar para viajantes
       </Link>
 
 
@@ -364,3 +364,4 @@ function Info({
     </div>
   );
 }
+

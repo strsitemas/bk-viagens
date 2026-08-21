@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import type { ReactNode } from "react";
 import { redirect } from "next/navigation";
 
@@ -62,7 +62,7 @@ export default async function ProtectedAdminLayout({
                 </span>
 
                 <span className="block text-xs font-semibold uppercase tracking-[0.2em] text-[#078b87]">
-                  AdministraÃ§Ã£o
+                  Administração
                 </span>
               </span>
             </Link>
@@ -85,7 +85,7 @@ export default async function ProtectedAdminLayout({
                 href="/admin/conteudo"
                 className="rounded-xl px-4 py-2.5 text-sm font-semibold text-[#315654] transition hover:bg-[#edf7f5]"
               >
-                ConteÃºdo
+                Conteúdo
               </Link>
             </nav>
 

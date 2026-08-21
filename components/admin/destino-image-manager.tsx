@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import {
   ChangeEvent,
@@ -77,7 +77,7 @@ export default function DestinoImageManager({
       setArquivo(null);
       setPreview(null);
       setErro(
-        "A imagem deve possuir no mÃ¡ximo 5 MB."
+        "A imagem deve possuir no máximo 5 MB."
       );
       return;
     }
@@ -119,7 +119,7 @@ export default function DestinoImageManager({
     try {
       /*
        * Etapa 1:
-       * envia o arquivo fÃ­sico ao Vercel Blob.
+       * envia o arquivo físico ao Vercel Blob.
        */
       const formData = new FormData();
       formData.append("file", arquivo);
@@ -174,7 +174,7 @@ export default function DestinoImageManager({
       ) {
         throw new Error(
           registerData.message ||
-            "A imagem foi enviada, mas nÃ£o pÃ´de ser registrada."
+            "A imagem foi enviada, mas não pôde ser registrada."
         );
       }
 
@@ -202,7 +202,7 @@ export default function DestinoImageManager({
       setErro(
         error instanceof Error
           ? error.message
-          : "NÃ£o foi possÃ­vel enviar a imagem."
+          : "Não foi possível enviar a imagem."
       );
     } finally {
       setEnviando(false);
@@ -213,7 +213,7 @@ export default function DestinoImageManager({
     <section className="rounded-[2rem] border border-[#dce9e7] bg-white p-7 lg:p-8">
       <div>
         <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#078b87]">
-          MÃ­dia
+          Mídia
         </p>
 
         <h2 className="mt-2 text-2xl font-semibold text-[#173f3e]">
@@ -257,7 +257,7 @@ export default function DestinoImageManager({
           />
 
           <span className="mt-2 block text-xs text-[#82918f]">
-            JPG, PNG, WebP ou AVIF. MÃ¡ximo de 5 MB.
+            JPG, PNG, WebP ou AVIF. Máximo de 5 MB.
           </span>
         </label>
 
@@ -265,7 +265,7 @@ export default function DestinoImageManager({
           <div className="overflow-hidden rounded-3xl border border-[#dce9e7] bg-[#f5f9f8]">
             <img
               src={preview}
-              alt="PrÃ©-visualizaÃ§Ã£o da imagem selecionada"
+              alt="Pré-visualização da imagem selecionada"
               className="h-[320px] w-full object-cover"
             />
           </div>

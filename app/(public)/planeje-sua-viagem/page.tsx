@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import { TravelPlannerForm } from "@/components/planner/travel-planner-form";
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
@@ -33,9 +33,9 @@ export default function PlanejeSuaViagemPage() {
               </h1>
 
               <p className="mt-7 max-w-lg text-lg leading-8 text-[#425452]">
-                VocÃª nÃ£o precisa chegar com tudo decidido. Conte o que
-                jÃ¡ sabe, o que gostaria de viver e quem vai com você.
-                A conversa comeÃ§a daÃ­.
+                Você não precisa chegar com tudo decidido. Conte o que
+                já sabe, o que gostaria de viver e quem vai com você.
+                A conversa começa daí.
               </p>
 
               <div className="mt-10 space-y-5 border-t border-[#bfdedb] pt-8">
@@ -66,7 +66,7 @@ export default function PlanejeSuaViagemPage() {
                   </span>
 
                   <p className="pt-1 text-base leading-7 text-[#425452]">
-                    VocÃª recebe atendimento para avanÃ§ar com seguranÃ§a.
+                    Você recebe atendimento para avançar com segurança.
                   </p>
                 </div>
 

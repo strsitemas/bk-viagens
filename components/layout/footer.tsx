@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 
 const explore = [
@@ -98,7 +98,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="w-fit text-sm text-white/70 transition hover:text-white"
               >
-                Instagram â†—
+                Instagram ↗
               </a>
             </nav>
           </div>
@@ -107,11 +107,11 @@ export function Footer() {
 
         <div className="flex flex-col gap-3 pt-7 text-xs text-white/40 sm:flex-row sm:items-center sm:justify-between">
           <p>
-            Â© {new Date().getFullYear()} Buckart Viagens. Todos os direitos reservados.
+            © {new Date().getFullYear()} Buckart Viagens. Todos os direitos reservados.
           </p>
 
           <p>
-            Experiências comeÃ§am antes do embarque.
+            Experiências começam antes do embarque.
           </p>
         </div>
 

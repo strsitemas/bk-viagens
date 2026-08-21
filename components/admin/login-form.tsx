@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
@@ -39,7 +39,7 @@ export function AdminLoginForm() {
       if (!response.ok) {
         setError(
           result.message ||
-            "NÃ£o foi possÃ­vel entrar."
+            "Não foi possível entrar."
         );
         return;
       }
@@ -49,7 +49,7 @@ export function AdminLoginForm() {
     }
     catch {
       setError(
-        "NÃ£o foi possÃ­vel conectar ao servidor."
+        "Não foi possível conectar ao servidor."
       );
     }
     finally {

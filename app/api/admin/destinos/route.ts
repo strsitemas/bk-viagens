@@ -1,4 +1,4 @@
-﻿import { NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 
 import { prisma } from "@/lib/prisma";
 import { registrarAuditoria } from "@/lib/audit";
@@ -63,7 +63,7 @@ export async function POST(request: Request) {
         parsed === null ||
         Array.isArray(parsed)
       ) {
-        throw new Error("Body invÃ¡lido");
+        throw new Error("Body inválido");
       }
 
       body = parsed as Record<string, unknown>;
@@ -77,7 +77,7 @@ export async function POST(request: Request) {
       return NextResponse.json(
         {
           success: false,
-          message: "JSON invÃ¡lido.",
+          message: "JSON inválido.",
           requestId,
         },
         { status: 400 }
@@ -100,7 +100,7 @@ export async function POST(request: Request) {
         {
           success: false,
           message:
-            "Nome, paÃ­s e tipo do destino sÃ£o obrigatÃ³rios.",
+            "Nome, país e tipo do destino são obrigatórios.",
           requestId,
         },
         { status: 400 }
@@ -115,7 +115,7 @@ export async function POST(request: Request) {
       return NextResponse.json(
         {
           success: false,
-          message: "NÃ£o foi possÃ­vel gerar o slug.",
+          message: "Não foi possível gerar o slug.",
           requestId,
         },
         { status: 400 }
@@ -133,7 +133,7 @@ export async function POST(request: Request) {
         {
           success: false,
           message:
-            "JÃ¡ existe um destino utilizando este slug.",
+            "Já existe um destino utilizando este slug.",
           requestId,
         },
         { status: 409 }
@@ -222,7 +222,7 @@ export async function POST(request: Request) {
       {
         success: false,
         message:
-          "NÃ£o foi possÃ­vel cadastrar o destino.",
+          "Não foi possível cadastrar o destino.",
         requestId,
       },
       {

@@ -1,11 +1,11 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 
 const styles = [
   ["Lua de Mel", "Romance, tempo e lugares especiais.", "/lua-de-mel"],
-  ["FamÃ­lia", "Experiências que funcionam para todas as idades.", "/experiencias"],
+  ["Família", "Experiências que funcionam para todas as idades.", "/experiencias"],
   ["Praia", "Sol, mar e dias sem pressa.", "/destinos"],
   ["Cruzeiros", "Conforto e novos lugares a cada parada.", "/cruzeiros"],
-  ["Gastronomia", "ConheÃ§a um destino tambÃ©m pela mesa.", "/experiencias"],
+  ["Gastronomia", "Conheça um destino também pela mesa.", "/experiencias"],
   ["Natureza", "Paisagens que justificam a viagem.", "/destinos"],
 ];
 
@@ -19,7 +19,7 @@ export function TravelStyles() {
           </p>
 
           <h2 className="mt-4 text-4xl font-medium tracking-[-0.04em] text-[#073f3f] sm:text-5xl">
-            O destino importa. O jeito de viver a viagem tambÃ©m.
+            O destino importa. O jeito de viver a viagem também.
           </h2>
         </div>
 
@@ -41,7 +41,7 @@ export function TravelStyles() {
                   </p>
 
                   <span className="mt-5 inline-flex text-xl text-[#087d7a] transition-transform group-hover:translate-x-1">
-                    â†’
+                    →
                   </span>
                 </div>
               </div>

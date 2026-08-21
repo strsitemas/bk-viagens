@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import { redirect } from "next/navigation";
 
 import { prisma } from "@/lib/prisma";
@@ -40,11 +40,11 @@ export default async function AdminConteudoPage() {
           </p>
 
           <h1 className="mt-3 text-3xl font-semibold text-[#173f3e]">
-            VocÃª nÃ£o possui permissÃ£o para editar o site.
+            Você não possui permissão para editar o site.
           </h1>
 
           <p className="mt-4 text-base leading-7 text-[#60716f]">
-            O gerenciamento de conteúdo estÃ¡ disponÃ­vel
+            O gerenciamento de conteúdo está disponível
             somente para administradores e editores.
           </p>
 
@@ -104,11 +104,11 @@ export default async function AdminConteudoPage() {
         </p>
 
         <h1 className="mt-3 text-4xl font-semibold tracking-[-0.04em] text-[#173f3e] sm:text-5xl">
-          ConteÃºdo do site
+          Conteúdo do site
         </h1>
 
         <p className="mt-4 max-w-2xl text-base leading-7 text-[#60716f]">
-          Gerencie destinos, experiências, publicaÃ§Ãµes
+          Gerencie destinos, experiências, publicações
           e destaques apresentados aos viajantes.
         </p>
       </div>
@@ -149,7 +149,7 @@ export default async function AdminConteudoPage() {
         <div className="rounded-[2rem] border border-[#dce9e7] bg-white p-7 shadow-[0_12px_35px_rgba(15,70,68,0.05)] lg:p-8">
 
           <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#e4f3f1] text-2xl">
-            âœˆ
+            ✈
           </div>
 
           <h2 className="mt-6 text-2xl font-semibold tracking-[-0.025em] text-[#173f3e]">
@@ -157,21 +157,21 @@ export default async function AdminConteudoPage() {
           </h2>
 
           <p className="mt-3 text-base leading-7 text-[#60716f]">
-            Pacotes, roteiros, duraÃ§Ã£o, preÃ§os,
-            destaques, publicaÃ§Ã£o e informaÃ§Ãµes
+            Pacotes, roteiros, duração, preços,
+            destaques, publicação e informações
             comerciais.
           </p>
 
           <div className="mt-7 rounded-2xl bg-[#f5f9f8] px-5 py-4">
             <p className="text-sm font-semibold text-[#49605e]">
-              {experiencias} cadastradas Â·{" "}
+              {experiencias} cadastradas ·{" "}
               {experienciasPublicadas} publicadas
             </p>
           </div>
 
           <div className="mt-7">
             <span className="inline-flex rounded-full bg-[#dfe9e7] px-5 py-3 text-sm font-semibold text-[#49605e]">
-              CRUD serÃ¡ a próxima etapa
+              CRUD será a próxima etapa
             </span>
           </div>
 
@@ -181,7 +181,7 @@ export default async function AdminConteudoPage() {
         <div className="rounded-[2rem] border border-[#dce9e7] bg-white p-7 shadow-[0_12px_35px_rgba(15,70,68,0.05)] lg:p-8">
 
           <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#e4f3f1] text-2xl">
-            â—Ž
+            ◎
           </div>
 
           <h2 className="mt-6 text-2xl font-semibold tracking-[-0.025em] text-[#173f3e]">
@@ -189,13 +189,13 @@ export default async function AdminConteudoPage() {
           </h2>
 
           <p className="mt-3 text-base leading-7 text-[#60716f]">
-            PaÃ­ses, cidades, regiÃµes, melhor Ã©poca,
-            descriÃ§Ã£o, SEO e conteúdo de inspiraÃ§Ã£o.
+            Países, cidades, regiões, melhor época,
+            descrição, SEO e conteúdo de inspiração.
           </p>
 
           <div className="mt-7 rounded-2xl bg-[#f5f9f8] px-5 py-4">
             <p className="text-sm font-semibold text-[#49605e]">
-              {destinos} cadastrados Â·{" "}
+              {destinos} cadastrados ·{" "}
               {destinosPublicados} publicados
             </p>
           </div>
@@ -225,10 +225,10 @@ export default async function AdminConteudoPage() {
         </h2>
 
         <p className="mt-3 max-w-3xl text-base leading-7 text-[#536967]">
-          Esta Ã¡rea jÃ¡ consulta os modelos reais do
-          Prisma. A próxima etapa habilitarÃ¡ criaÃ§Ã£o,
-          ediÃ§Ã£o, publicaÃ§Ã£o e organizaÃ§Ã£o das
-          experiências sem necessidade de alterar cÃ³digo.
+          Esta área já consulta os modelos reais do
+          Prisma. A próxima etapa habilitará criação,
+          edição, publicação e organização das
+          experiências sem necessidade de alterar código.
         </p>
 
       </section>

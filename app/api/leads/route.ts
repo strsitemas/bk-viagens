@@ -1,4 +1,4 @@
-﻿import { NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { leadSchema } from "@/lib/validations/lead";
 
@@ -33,7 +33,7 @@ export async function POST(request: Request) {
       return NextResponse.json(
         {
           success: false,
-          message: "A agÃªncia ainda nÃ£o estÃ¡ configurada para receber solicitaÃ§Ãµes.",
+          message: "A agência ainda não está configurada para receber solicitações.",
         },
         { status: 503 }
       );
@@ -77,7 +77,7 @@ export async function POST(request: Request) {
       {
         success: true,
         message:
-          "Recebemos sua solicitaÃ§Ã£o. A Buckart poderÃ¡ continuar o atendimento com você.",
+          "Recebemos sua solicitação. A Buckart poderá continuar o atendimento com você.",
         lead,
       },
       { status: 201 }
@@ -89,7 +89,7 @@ export async function POST(request: Request) {
       {
         success: false,
         message:
-          "NÃ£o foi possÃ­vel enviar sua solicitaÃ§Ã£o agora. Tente novamente.",
+          "Não foi possível enviar sua solicitação agora. Tente novamente.",
       },
       { status: 500 }
     );

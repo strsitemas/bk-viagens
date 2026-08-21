@@ -1,20 +1,20 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 
 const benefits = [
   {
     number: "01",
-    title: "VocÃª conta o que deseja",
-    text: "Destino definido ou apenas uma ideia. A conversa comeÃ§a entendendo como você realmente quer viajar.",
+    title: "Você conta o que deseja",
+    text: "Destino definido ou apenas uma ideia. A conversa começa entendendo como você realmente quer viajar.",
   },
   {
     number: "02",
     title: "A Buckart cuida dos detalhes",
-    text: "Roteiro, hospedagem, deslocamentos e experiências sÃ£o organizados para fazer sentido juntos.",
+    text: "Roteiro, hospedagem, deslocamentos e experiências são organizados para fazer sentido juntos.",
   },
   {
     number: "03",
-    title: "VocÃª aproveita a viagem",
-    text: "Menos tempo pesquisando e resolvendo logÃ­stica. Mais tempo vivendo aquilo que motivou a viagem.",
+    title: "Você aproveita a viagem",
+    text: "Menos tempo pesquisando e resolvendo logística. Mais tempo vivendo aquilo que motivou a viagem.",
   },
 ];
 
@@ -31,11 +31,11 @@ export function BuckartExperience() {
             </p>
 
             <h2 className="mt-5 max-w-xl text-4xl font-medium leading-[1.05] tracking-[-0.045em] text-[#073f3f] sm:text-5xl lg:text-6xl">
-              Viajar Ã© melhor quando alguÃ©m cuida dos detalhes.
+              Viajar é melhor quando alguém cuida dos detalhes.
             </h2>
 
             <p className="mt-7 max-w-lg text-base leading-7 text-stone-600">
-              VocÃª nÃ£o precisa transformar suas fÃ©rias em um projeto de
+              Você não precisa transformar suas férias em um projeto de
               pesquisa. A Buckart ajuda a organizar as escolhas para que a
               experiência seja simples antes, durante e depois da viagem.
             </p>
@@ -46,7 +46,7 @@ export function BuckartExperience() {
             >
               Falar sobre minha viagem
               <span className="ml-3" aria-hidden="true">
-                â†’
+                →
               </span>
             </Link>
           </div>
