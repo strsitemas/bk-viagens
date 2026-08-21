@@ -18,13 +18,9 @@ const institutional = [
 export function Footer() {
   return (
     <footer className="bg-[#032f30] px-6 pb-8 pt-16 text-white lg:px-10 lg:pt-20">
-
       <div className="mx-auto max-w-[1440px]">
-
         <div className="grid gap-14 border-b border-white/10 pb-14 md:grid-cols-2 lg:grid-cols-[1.4fr_0.7fr_0.7fr]">
-
           <div className="max-w-md">
-
             <Link
               href="/"
               className="inline-flex items-center gap-4"
@@ -55,7 +51,6 @@ export function Footer() {
               Viagens planejadas com cuidado, curadoria e atendimento próximo
               para você aproveitar melhor cada experiência.
             </p>
-
           </div>
 
           <div>
@@ -102,19 +97,34 @@ export function Footer() {
               </a>
             </nav>
           </div>
-
         </div>
 
-        <div className="flex flex-col gap-3 pt-7 text-xs text-white/40 sm:flex-row sm:items-center sm:justify-between">
-          <p>
-            © {new Date().getFullYear()} Buckart Viagens. Todos os direitos reservados.
-          </p>
+        <div className="flex flex-col gap-5 pt-7 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p className="text-xs text-white/45">
+              © {new Date().getFullYear()} Buckart Viagens. Todos os direitos reservados.
+            </p>
 
-          <p>
-            Experiências começam antes do embarque.
-          </p>
+            <p className="mt-2 text-sm text-white/70">
+              Desenvolvido por{" "}
+              <a
+                href="https://strsoftware.com.br"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-[#70eee7] transition hover:text-white"
+              >
+                STR Software
+              </a>
+            </p>
+          </div>
+
+          <Link
+            href="/admin/login"
+            className="w-fit text-[11px] text-white/30 transition hover:text-white/70"
+          >
+            Área administrativa
+          </Link>
         </div>
-
       </div>
     </footer>
   );
