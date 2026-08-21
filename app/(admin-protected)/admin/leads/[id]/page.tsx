@@ -78,7 +78,7 @@ export default async function LeadDetailPage({
 
   const whatsappHref = whatsapp
     ? `https://wa.me/${whatsapp}?text=${encodeURIComponent(
-        `OlÃ¡ ${lead.nome}, tudo bem? Aqui Ã© da Buckart Viagens. Recebemos sua solicitaÃ§Ã£o e vamos conversar sobre sua viagem.`
+        `Olá ${lead.nome}, tudo bem? Aqui é da Buckart Viagens. Recebemos sua solicitação e vamos conversar sobre sua viagem.`
       )}`
     : null;
 
@@ -93,7 +93,7 @@ export default async function LeadDetailPage({
         href="/admin/leads"
         className="text-sm font-semibold text-[#087b77] hover:text-[#064f4e]"
       >
-        Ã¢â€ Â Voltar para viajantes
+        ← Voltar para viajantes
       </Link>
 
 
@@ -110,7 +110,7 @@ export default async function LeadDetailPage({
           </h1>
 
           <p className="mt-3 text-base text-[#60716f]">
-            SolicitaÃ§Ã£o recebida em{" "}
+            Solicitação recebida em{" "}
             {new Intl.DateTimeFormat(
               "pt-BR",
               {
@@ -159,18 +159,18 @@ export default async function LeadDetailPage({
               />
 
               <Info
-                label="PerÃ­odo"
+                label="Período"
                 value={
                   lead.periodoDesejado ||
-                  "NÃ£o informado"
+                  "Não informado"
                 }
               />
 
               <Info
-                label="DuraÃ§Ã£o"
+                label="Duração"
                 value={
                   lead.duracaoDesejada ||
-                  "NÃ£o informada"
+                  "Não informada"
                 }
               />
 
@@ -191,17 +191,17 @@ export default async function LeadDetailPage({
               />
 
               <Info
-                label="CrianÃ§as"
+                label="Crianças"
                 value={String(
                   lead.quantidadeCriancas
                 )}
               />
 
               <Info
-                label="NÃ­vel de conforto"
+                label="Nível de conforto"
                 value={
                   lead.nivelConforto ||
-                  "NÃ£o informado"
+                  "Não informado"
                 }
               />
 
@@ -214,7 +214,7 @@ export default async function LeadDetailPage({
                   ]
                     .filter(Boolean)
                     .join(" - ") ||
-                  "NÃ£o informada"
+                  "Não informada"
                 }
               />
 
@@ -226,12 +226,12 @@ export default async function LeadDetailPage({
           <div className="rounded-3xl border border-[#deebe9] bg-white p-7 lg:p-8">
 
             <h2 className="text-2xl font-semibold tracking-[-0.025em] text-[#173f3e]">
-              ObservaÃ§Ãµes do viajante
+              Observações do viajante
             </h2>
 
             <p className="mt-5 whitespace-pre-wrap text-base leading-8 text-[#435957]">
               {lead.observacoes ||
-                "Nenhuma observaÃ§Ã£o informada."}
+                "Nenhuma observação informada."}
             </p>
 
           </div>
@@ -253,7 +253,7 @@ export default async function LeadDetailPage({
                 label="WhatsApp"
                 value={
                   lead.whatsapp ||
-                  "NÃ£o informado"
+                  "Não informado"
                 }
               />
 
@@ -261,7 +261,7 @@ export default async function LeadDetailPage({
                 label="Telefone"
                 value={
                   lead.telefone ||
-                  "NÃ£o informado"
+                  "Não informado"
                 }
               />
 
@@ -269,7 +269,7 @@ export default async function LeadDetailPage({
                 label="E-mail"
                 value={
                   lead.email ||
-                  "NÃ£o informado"
+                  "Não informado"
                 }
               />
 
@@ -304,7 +304,7 @@ export default async function LeadDetailPage({
                 label="Origem do lead"
                 value={
                   lead.origemLead ||
-                  "NÃ£o informada"
+                  "Não informada"
                 }
               />
 
@@ -313,12 +313,12 @@ export default async function LeadDetailPage({
                 value={
                   lead.consentimentoLgpd
                     ? "Consentimento registrado"
-                    : "NÃ£o registrado"
+                    : "Não registrado"
                 }
               />
 
               <Info
-                label="Ãšltima atualizaÃ§Ã£o"
+                label="Última atualização"
                 value={new Intl.DateTimeFormat(
                   "pt-BR",
                   {
@@ -364,4 +364,6 @@ function Info({
     </div>
   );
 }
+
+
 
