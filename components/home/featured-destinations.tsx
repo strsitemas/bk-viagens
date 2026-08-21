@@ -64,14 +64,14 @@ export function FeaturedDestinations() {
                   className="object-cover transition duration-700 group-hover:scale-[1.035]"
                 />
 
-                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/5 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent" />
 
                 <div className="absolute inset-x-0 bottom-0 p-6 text-white lg:p-8">
                   <h3 className="text-3xl font-medium tracking-[-0.03em]">
                     {destination.name}
                   </h3>
 
-                  <p className="mt-2 max-w-xs text-sm leading-6 text-white/75">
+                  <p className="mt-2 max-w-xs text-sm font-medium leading-6 text-white/95">
                     {destination.description}
                   </p>
 

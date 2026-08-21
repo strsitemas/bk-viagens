@@ -29,7 +29,7 @@ export function FinalCta() {
               </span>
             </h2>
 
-            <p className="mt-7 max-w-2xl text-base leading-7 text-white/75">
+            <p className="mt-7 max-w-2xl text-base leading-7 text-white/90">
               Pode ser um destino específico, uma data especial ou simplesmente
               aquela vontade de sair por alguns dias. A partir daí, a Buckart
               ajuda a transformar a ideia em viagem.

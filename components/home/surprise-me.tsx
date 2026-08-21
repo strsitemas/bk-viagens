@@ -22,7 +22,7 @@ export function SurpriseMe() {
               </span>
             </h2>
 
-            <p className="mt-6 max-w-xl leading-7 text-white/70">
+            <p className="mt-6 max-w-xl leading-7 text-white/90">
               Conte como você gosta de viajar. Nós mostramos experiências que
               combinam com seu momento — sem você precisar pesquisar por horas.
             </p>
@@ -30,7 +30,7 @@ export function SurpriseMe() {
 
           <Link
             href="/me-surpreenda"
-            className="inline-flex min-h-14 items-center justify-center rounded-full bg-white px-7 text-sm font-semibold text-[#064b4b] transition hover:bg-[#c8f6f2]"
+            className="inline-flex min-h-14 items-center justify-center rounded-full bg-white px-7 text-sm font-semibold !text-[#064b4b] transition hover:bg-[#c8f6f2] hover:!text-[#064b4b]"
           >
             Me surpreenda
             <span className="ml-3" aria-hidden="true">→</span>
