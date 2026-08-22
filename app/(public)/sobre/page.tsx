@@ -35,7 +35,7 @@ export default function SobrePage() {
             <div className="relative overflow-hidden rounded-[2.5rem] bg-[#e6f3f1] shadow-[0_24px_70px_rgba(6,79,78,0.12)]">
               <div className="relative aspect-[2/3]">
                 <Image
-                  src="/images/reserva de imagens/passaport1.jpg"
+                  src="/images/passaport2.jpg"
                   alt="Atendimento e cuidado com a documentação da viagem"
                   fill
                   priority
