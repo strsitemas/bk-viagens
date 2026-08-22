@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 
 import { Footer } from "@/components/layout/footer";
@@ -183,7 +183,7 @@ export function PublicLandingPage({
 
               <Link
                 href="/planeje-sua-viagem"
-                className="mt-8 inline-flex min-h-14 items-center rounded-full bg-white px-7 font-semibold text-[#064f4e] transition hover:bg-[#dffaf7] lg:mt-0"
+                className="mt-8 inline-flex min-h-14 items-center rounded-full bg-white px-7 font-semibold !text-[#064f4e] transition hover:bg-[#dffaf7] hover:!text-[#064f4e] lg:mt-0"
               >
                 Quero planejar
                 <span className="ml-2" aria-hidden="true">
