@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { Footer } from "@/components/layout/footer";
@@ -10,24 +11,39 @@ export default function SobrePage() {
 
       <main className="bg-[#f6fbfa]">
         <section className="px-6 pb-20 pt-40 lg:px-10 lg:pb-28 lg:pt-48">
-          <div className="mx-auto max-w-[1240px]">
-            <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#078b87]">
-              Sobre a Buckart
-            </p>
+          <div className="mx-auto grid max-w-[1240px] items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#078b87]">
+                Sobre a Buckart
+              </p>
 
-            <h1 className="mt-6 max-w-4xl text-5xl font-semibold leading-[0.98] tracking-[-0.05em] text-[#173f3e] sm:text-6xl lg:text-7xl">
-              Viajar começa muito
-              <span className="block text-[#078b87]">
-                antes do embarque.
-              </span>
-            </h1>
+              <h1 className="mt-6 text-5xl font-semibold leading-[0.98] tracking-[-0.05em] text-[#173f3e] sm:text-6xl lg:text-7xl">
+                Viajar começa muito
+                <span className="block text-[#078b87]">
+                  antes do embarque.
+                </span>
+              </h1>
 
-            <p className="mt-8 max-w-3xl text-lg leading-8 text-[#526966]">
-              A Buckart Viagens nasceu para transformar o planejamento de uma
-              viagem em uma experiência mais simples, próxima e personalizada.
-              Cada viajante tem expectativas, prioridades e histórias
-              diferentes — e acreditamos que cada viagem também deve ser única.
-            </p>
+              <p className="mt-8 max-w-2xl text-lg leading-8 text-[#526966]">
+                A Buckart Viagens nasceu para transformar o planejamento de uma
+                viagem em uma experiência mais simples, próxima e personalizada.
+                Cada viajante tem expectativas, prioridades e histórias
+                diferentes — e acreditamos que cada viagem também deve ser única.
+              </p>
+            </div>
+
+            <div className="relative overflow-hidden rounded-[2.5rem] bg-[#e6f3f1] shadow-[0_24px_70px_rgba(6,79,78,0.12)]">
+              <div className="relative aspect-[2/3]">
+                <Image
+                  src="/images/reserva de imagens/passaport1.jpg"
+                  alt="Atendimento e cuidado com a documentação da viagem"
+                  fill
+                  priority
+                  sizes="(max-width: 1024px) 100vw, 45vw"
+                  className="object-cover"
+                />
+              </div>
+            </div>
           </div>
         </section>
 
