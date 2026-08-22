@@ -38,7 +38,7 @@ export function FinalCta() {
 
           <Link
             href="/planeje-sua-viagem"
-            className="inline-flex min-h-14 items-center justify-center rounded-full bg-white px-8 text-sm font-semibold text-[#064f4e] shadow-xl transition hover:bg-[#dffaf7]"
+            className="inline-flex min-h-14 items-center justify-center rounded-full bg-white px-8 text-sm font-semibold !text-[#064f4e] shadow-xl transition hover:bg-[#dffaf7] hover:!text-[#064f4e]"
           >
             Planejar minha viagem
             <span className="ml-3 text-[#0b8f8b]" aria-hidden="true">
