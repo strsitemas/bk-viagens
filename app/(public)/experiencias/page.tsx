@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 
 import { Footer } from "@/components/layout/footer";
@@ -10,42 +10,42 @@ const experiencias = [
     description:
       "Viagens para criar memórias juntos, com conforto e planejamento para todas as idades.",
     image:
-      "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=82",
+      "/images/reserva%20de%20imagens/darren-lawrence-EpeNGhitrlc-unsplash.jpg",
   },
   {
     title: "Praia",
     description:
       "Dias leves, mar e descanso em destinos escolhidos para o seu ritmo.",
     image:
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=82",
+      "/images/reserva%20de%20imagens/fadi-al-shami-jTmbyBnbaIE-unsplash.jpg",
   },
   {
     title: "Neve",
     description:
       "Montanhas, estações de esqui e experiências de inverno para descobrir novos cenários.",
     image:
-      "https://images.unsplash.com/photo-1486911278844-a81c5267e227?auto=format&fit=crop&w=1200&q=82",
+      "/images/reserva%20de%20imagens/paul-pastourmatzis-8kDOOrs608I-unsplash.jpg",
   },
   {
     title: "Europa",
     description:
       "Cultura, gastronomia e cidades inesquecíveis combinadas em uma viagem com a sua cara.",
     image:
-      "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=82",
+      "/images/reserva%20de%20imagens/quick-ps-pprY3KCsoAg-unsplash.jpg",
   },
   {
     title: "Itália",
     description:
       "História, gastronomia e paisagens para quem quer viver a Europa com mais profundidade.",
     image:
-      "https://images.unsplash.com/photo-1529260830199-42c24126f198?auto=format&fit=crop&w=1200&q=82",
+      "/images/reserva%20de%20imagens/marcelo-de-souza-romao-Wh2slczZjn0-unsplash.jpg",
   },
   {
     title: "Cruzeiros",
     description:
       "Descubra vários destinos enquanto aproveita toda a experiência de viajar pelo mar.",
     image:
-      "https://images.unsplash.com/photo-1548574505-5e239809ee19?auto=format&fit=crop&w=1200&q=82",
+      "/images/reserva%20de%20imagens/meg-von-haartman-7HKYqlrdKaw-unsplash.jpg",
   },
 ];
 

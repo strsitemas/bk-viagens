@@ -1,4 +1,4 @@
-﻿import { PublicLandingPage } from "@/components/public-landing-page";
+import { PublicLandingPage } from "@/components/public-landing-page";
 
 export default function LuaDeMelPage() {
   return (
@@ -7,7 +7,7 @@ export default function LuaDeMelPage() {
       title="A primeira grande viagem"
       highlight="da nova história de vocês."
       description="Uma lua de mel merece mais do que um destino bonito. A Buckart ajuda a construir uma viagem a dois com ritmo, experiências e detalhes pensados para o casal."
-      heroImage="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2200&q=85"
+      heroImage="/images/reserva%20de%20imagens/rayyu-maldives-_vKhLrN3gM8-unsplash.jpg"
       heroImageAlt="Praia paradisíaca para lua de mel"
       items={[
         {
